@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join the Directory — Suds Scout</title>
+<meta name="description" content="Mobile auto detailing businesses in Florida: get a free basic listing on Suds Scout. Every listing is verified before it goes live.">
+<link rel="canonical" href="https://www.sudsscout.com/">
+<link rel="stylesheet" href="styles.css">
+<!-- Phase 2 instrumentation slots (audit lesson: bake in from day one) -->
+<!-- GA4: replace G-XXXXXXXXXX with the Suds Scout measurement ID and uncomment
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+<!-- Google Search Console: uncomment and paste the verification content value
+<meta name="google-site-verification" content="PASTE_VERIFICATION_TOKEN_HERE">
+-->
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0;max-width:560px}
+form.join .checks label{display:flex;gap:10px;align-items:center;font-weight:600;margin:0!important;border:1px solid var(--line);border-radius:8px;padding:11px 12px;background:#fff;cursor:pointer}
+.checks label:hover{border-color:var(--orange)}
+form.join .checks input{width:18px!important;height:18px!important;flex:none;margin:0;padding:0;border:0;accent-color:#f97316}
+@media(max-width:640px){.checks{grid-template-columns:1fr}}
+.hp{position:absolute;left:-9999px}
+.err{background:#fef2f2;border:1px solid #fca5a5;color:#991b1b;border-radius:10px;padding:12px 14px;margin:14px 0}
+.ok{background:#f0fdf4;border:1px solid #86efac;color:#166534;border-radius:10px;padding:12px 14px;margin:14px 0}
+</style>
+</head>
+<body>
+<header class="site"><div class="header-inner">
+<a href="index.html"><img class="logo" src="logo.png" alt="Suds Scout — Find Mobile Car Detailing Companies in Florida"></a>
+<nav class="main">
+<a href="swfl.html">SWFL</a>
+<a href="orlando.html">Orlando</a>
+<a href="tampa-bay.html">Tampa Bay</a>
+<a href="south-florida.html">South Florida</a>
+<a href="jacksonville.html">Jacksonville</a>
+<a href="florida.html">All Florida</a>
+<a href="pricing.html">For Businesses</a>
+<a href="join.html" class="cta">Join the directory</a>
+</nav></div></header>
+<main>
+<section class="hero"><h1>Join Suds Scout — free</h1>
+<p class="sub">For mobile auto detailing businesses in Florida. Free forever — we check your published business details, then your listing goes live with your own phone number on it.</p></section>
+<section class="block">
+<h2>What you get, free</h2>
+<ul>
+<li>Your business on your city's page and your region page, with your phone number tappable on mobile — customers call you direct.</li>
+<li>Your services, service area and published details shown on your listing, exactly as you publish them.</li>
+<li>Every tap on your number is tracked, so when we talk about Featured later, you see the proof first.</li>
+</ul>
+<h2>And later, only if it earns out</h2>
+<ul>
+<li><strong>Featured — $49/month:</strong> top of your city page with your logo and up to 2 photos of your work, labelled "Featured — Paid Placement". Offered only after your free listing shows at least 3 tracked intent taps in 30 days or a tracked enquiry. First in your city is a Founding Member and locks $49/month for life. First-month guarantee: if Featured doesn't beat your free listing's taps in month one, that month is free.</li>
+<li><strong>City Sponsor:</strong> the hero band at the very top of your city page, labelled "Sponsored" — one business per city. See <a href="pricing.html">pricing</a> for your area's tier.</li>
+</ul>
+<p><a class="buy-btn" href="https://buy.stripe.com/9B67sLdWfdCO2T0bSO3oA12">Go Featured — $49/month</a> <a class="buy-btn alt" href="https://buy.stripe.com/aFacN59FZaqCeBI4qm3oA13">Go Featured — $490/year</a></p>
+<p>City Sponsor spots are bought from the <a href="claim.html">claim page</a>, where your area's tier price is shown.</p>
+<p>Claiming or joining is always free. If you're already listed, use the <a href="claim.html">claim page</a> instead — it's faster.</p>
+</section>
+<section class="block">
+<h2>Request your free listing</h2>
+<form id="join-form" class="join" novalidate>
+<label for="business">Business name *</label>
+<input id="business" required autocomplete="organization">
+<label for="contact">Your name *</label>
+<input id="contact" required autocomplete="name">
+<label for="phone">Business phone (published) *</label>
+<input id="phone" type="tel" required autocomplete="tel" placeholder="(239) 555-0123">
+<label for="email">Your email *</label>
+<input id="email" type="email" required autocomplete="email">
+<label for="website">Business website or Facebook / Google page *</label>
+<input id="website" type="url" required placeholder="https://">
+<label for="town">Your base town *</label>
+<select id="town" required>
+<option value="">Choose your town…</option>
+<optgroup label="SWFL"><option>Fort Myers</option><option>Cape Coral</option><option>Naples</option><option>Bonita Springs</option><option>Estero</option><option>Lehigh Acres</option><option>Punta Gorda</option><option>Port Charlotte</option><option>Marco Island</option><option>Sanibel</option></optgroup>
+<optgroup label="Orlando"><option>Orlando</option><option>Winter Park</option><option>Kissimmee</option><option>Sanford</option><option>Altamonte Springs</option><option>Casselberry</option><option>Longwood</option><option>Apopka</option><option>Oviedo</option><option>Clermont</option></optgroup>
+<optgroup label="Tampa Bay"><option>Tampa</option><option>St. Petersburg</option><option>Clearwater</option><option>Bradenton</option><option>Sarasota</option><option>Brandon</option><option>Largo</option></optgroup>
+<optgroup label="South Florida"><option>Miami</option><option>Fort Lauderdale</option><option>Boca Raton</option><option>West Palm Beach</option><option>Plantation</option><option>Delray Beach</option><option>Coral Springs</option><option>Pompano Beach</option><option>Hollywood</option><option>Hialeah</option></optgroup>
+<optgroup label="Jacksonville"><option>Jacksonville</option><option>St. Augustine</option><option>Jacksonville Beach</option><option>Orange Park</option><option>Ponte Vedra Beach</option><option>Green Cove Springs</option></optgroup>
+</select>
+<label for="service-area">Towns / areas you serve</label>
+<input id="service-area" placeholder="e.g. Fort Myers, Cape Coral, Naples">
+<label for="category">Business type *</label>
+<select id="category" required>
+<option>Mobile detailing company</option>
+<option>Mobile car wash & detailing</option>
+<option>Detailing company with a mobile service</option>
+</select>
+<fieldset>
+<legend>Services you offer</legend>
+<label><input type="checkbox" name="services" value="Full detail (interior + exterior)"> Full detail (interior + exterior)</label>
+<label><input type="checkbox" name="services" value="Interior detailing"> Interior detailing</label>
+<label><input type="checkbox" name="services" value="Exterior wash & wax"> Exterior wash & wax</label>
+<label><input type="checkbox" name="services" value="Ceramic coating"> Ceramic coating</label>
+<label><input type="checkbox" name="services" value="Paint correction"> Paint correction</label>
+<label><input type="checkbox" name="services" value="Headlight restoration"> Headlight restoration</label>
+<label><input type="checkbox" name="services" value="Engine bay cleaning"> Engine bay cleaning</label>
+<label><input type="checkbox" name="services" value="Odor removal"> Odor removal</label>
+<label><input type="checkbox" name="services" value="Maintenance wash plans"> Maintenance wash plans</label>
+<label><input type="checkbox" name="services" value="Fleet detailing"> Fleet detailing</label>
+</fieldset>
+<label for="hours">Hours (as you publish them)</label>
+<input id="hours" placeholder="Mon–Sat 8am–6pm">
+<label for="message">Anything we should know?</label>
+<textarea id="message" rows="4" placeholder="e.g. We publish our package prices on our site; we bring our own water and power"></textarea>
+<input class="hp" type="text" id="company-website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="submit" id="submit-btn">Request my free listing</button>
+<p id="join-result" role="status"></p>
+</form>
+</section>
+</main>
+<footer class="site"><div class="inner">
+<nav><a href="index.html">Home</a><a href="florida.html">All Florida</a><a href="join.html">Join</a><a href="pricing.html">For Businesses — Pricing</a></nav>
+<p>Suds Scout — sudsscout.com. Free basic listings. Featured listings $49/month, only after tracked intent taps can be shown. Every listing is verified before publishing.</p>
+<p>Questions? Message us through the chat on this site any time, or email info@skillbinder.com.</p>
+<p class="legal">&copy; 2026 Suds Scout. All rights reserved. SkillBinder LLC d.b.a. Suds Scout &middot; info@skillbinder.com. Business names, trademarks and prices shown belong to their respective owners; a listing is not an endorsement. Use of this site means you accept our <a href="terms.html">Terms</a> and <a href="privacy-policy.html">Privacy Policy</a>.</p>
+</div></footer>
+
+<script>
+const SUPABASE_URL = "https://kctnaksisybxpsikbonz.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtjdG5ha3Npc3lieHBzaWtib256Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQzMTcyOTYsImV4cCI6MjEwOTg5MzI5Nn0.j8_HfxnUkb8rsW5MgZWpGu5UWW64UiaAA5aS7814LOw";
+const DIRECTORY_ID = "b75cdff0-2030-4e0b-a3f6-a088d5ca9f85";
+// Layer 1 filter: off-topic / adult / spam words. A match blocks the submit.
+const BANNED = ["escort","erotic","adult","porn","xxx","sex","massage","dating","hookup","onlyfans","casino","gambling","crypto","bitcoin","loan","payday","pharma","viagra","cialis","weed","cannabis","vape","tobacco","alcohol","strip","nude","fetish","camgirl","webcam"];
+function hasBanned(text){ const t=(" "+text+" ").toLowerCase(); return BANNED.some(w=>new RegExp("\\b"+w+"\\b").test(t)); }
+document.getElementById('join-form').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  const result = document.getElementById('join-result');
+  const btn = document.getElementById('submit-btn');
+  const val = id => document.getElementById(id).value.trim();
+  const fail = msg => { result.className='err'; result.textContent = msg; };
+  // Honeypot: bots fill it, humans never do.
+  if (document.getElementById('company-website').value) { result.textContent='Thank you — your request has been received and will be reviewed.'; return; }
+  const business=val('business'), contact=val('contact'), phone=val('phone'), email=val('email'),
+        region=val('region'), town=val('town'), category=val('category'), area=val('area'),
+        hours=val('hours'), website=val('website'), notes=val('notes'), other=val('other-services');
+  const services=[...document.querySelectorAll('#services input:checked')].map(c=>c.value);
+  if(!business||!contact||!phone||!email||!region||!town||!category||!website) return fail('Please fill in all the fields marked * — including your proof link (website, Google Business or Facebook).');
+  if(services.length===0 && !other) return fail('Please tick at least one service you offer.');
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return fail('That email address doesn\u2019t look right — please check it.');
+  if(phone.replace(/\D/g,'').length < 10) return fail('That phone number doesn\u2019t look complete — please use the number customers should call.');
+  let url; try{ url=new URL(website); if(!/^https?:$/.test(url.protocol)) throw 0; }catch(_){ return fail('Your proof link needs to be a full web address starting with https:// — your website, Google Business or Facebook page.'); }
+  const allText=[business,contact,area,hours,notes,other,services.join(' ')].join(' ');
+  if(hasBanned(allText)) return fail('That doesn\u2019t look like a mobile detailing business, so we can\u2019t list it. This directory is for mobile auto detailing businesses only.');
+  if(hasBanned(website)) return fail('That link doesn\u2019t look like a business page for mobile detailing.');
+  btn.disabled=true; btn.textContent='Sending for review…';
+  const message = JSON.stringify({region, category, service_area: area, hours, website, other_services: other, notes});
+  try{
+    const res = await fetch(SUPABASE_URL + '/rest/v1/join_requests', {
+      method:'POST',
+      headers:{'apikey':SUPABASE_ANON_KEY,'Authorization':'Bearer '+SUPABASE_ANON_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},
+      body: JSON.stringify({directory_id:DIRECTORY_ID, business_name:business, contact_name:contact, phone, email, town, services:services.join(', '), message, status:'new'})
+    });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    result.className='ok';
+    result.textContent='Thank you — your request has been received and is in the review queue. We verify every business against its published website, Google Business or Facebook page before anything goes live, so please allow a day or two. We\u2019ll email you at '+email+' when your free listing is published.';
+    e.target.reset();
+  }catch(err){
+    fail('Sorry — that didn\u2019t send. Please try again, or email us via the chat on this site and we\u2019ll take your details there.');
+  }finally{ btn.disabled=false; btn.textContent='Request my free listing'; }
+});
+</script>
+</body>
+</html>
